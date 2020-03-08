@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <title>JavaScritp Classes</title>
+    <script>
+        var draw;
+        var megasena = new Array();
+
+        var i = 0;
+
+        while (i < 6) {
+            draw = Math.ceil(Math.random() * 60);
+            if (megasena.indexOf(draw) < 0) {
+                megasena.push(draw);
+                i++;
+            }
+        }
+
+        function sortingNumbers(a, b) {
+            return a - b;
+        }
+
+        megasena.sort(sortingNumbers)
+        console.log(megasena)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
