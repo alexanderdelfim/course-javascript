@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>javaScript Classes</title>
+    <script>
+        var product = new Object();
+
+        product.name = "Pen";
+        product.price = 1.99;
+        product.color = "blue";
+        product.quantity = 500;
+        product.provider = "Bic";
+
+        function returnInfo() {
+            return "My " + this.name + " costs: $" + this.price;
+        }
+
+        product.info = returnInfo;
+
+        alert(product.info());
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
