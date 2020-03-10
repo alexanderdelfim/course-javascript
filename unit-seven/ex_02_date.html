@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>javaScript Classes</title>
+    <script>
+        function setTwoDigits(time) {
+            if (time < 10) {
+                return "0" + time;
+            } else {
+                return time;
+            }
+        }
+        var currentTime = new Date();
+        console.log("Hora atual: " + setTwoDigits(currentTime.getHours()) + ":" + setTwoDigits(currentTime.getMinutes()) + ":" + setTwoDigits(currentTime.getSeconds()));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
